@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#92C5E2"
+    tools:context=".account">
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6EB3BB"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="40dp"
+            android:text="Deposited" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:text="Withdrawn" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/dateview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogroup"
+        android:text="Date: "
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/currDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogroup"
+        android:layout_toRightOf="@id/dateview"
+        android:hint="2019-09-08"
+        android:textSize="22sp" />
+
+
+    <EditText
+        android:id="@+id/cname"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="472dp"
+        android:gravity="center"
+        android:hint="Customer Name"
+        android:padding="10dp"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/cadd"
+        android:layout_width="371dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginBottom="414dp"
+        android:gravity="center"
+        android:hint="Customer Address"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/cno"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="287dp"
+        android:gravity="center"
+        android:hint="Account No"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="234dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:hint="Amount"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:hint="Remarks"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/saveaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remarks"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="90dp"
+        android:background="#689F38"
+        android:text="Save" />
+</RelativeLayout>
